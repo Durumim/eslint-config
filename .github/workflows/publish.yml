@@ -1,12 +1,12 @@
-name: Publish to npm
+name: Create Release
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - 'v*.*.*'  # Isso vai disparar o workflow para tags que seguem o padrão v0.0.0
 
 jobs:
-  publish:
+  release:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,10 +17,22 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '16'
-        registry-url: 'https://registry.npmjs.org/'
 
     - name: Install dependencies
       run: npm install
+
+    - name: Create GitHub Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}  # Usa a tag que disparou o workflow
+        release_name: Release ${{ github.ref }}
+        body: |
+          ## Changes
+          - Describe your changes here
+        draft: false
+        prerelease: false
 
     - name: Publish to npm
       env:
