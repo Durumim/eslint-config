@@ -1,7 +1,7 @@
 {
   "name": "@durumim/eslint-config", 
   "description": "Shared ESLint configuration for Durumim UI projects",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "main": "react.js",
   "repository": {
@@ -14,7 +14,9 @@
   ],
   "peerDependencies": {
     "eslint": "^8.0.0",
-    "typescript": ">=5"
+    "typescript": ">=5",
+    "eslint-plugin-n": "^16.0.0",
+    "eslint-plugin-promise": "^6.0.0"
   },
   "peerDependenciesMeta": {
     "typescript": {
