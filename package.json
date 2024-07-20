@@ -3,7 +3,7 @@
   "description": "Shared ESLint configuration for Durumim UI projects",
   "version": "1.0.0",
   "private": false,
-  "main": "index.js",
+  "main": "react.js",
   "repository": {
     "url": "git@github.com:durumim/eslint-config.git"
   },
