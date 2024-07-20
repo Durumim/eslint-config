@@ -1,7 +1,7 @@
 {
   "name": "@durumim/eslint-config", 
   "description": "Shared ESLint configuration for Durumim UI projects",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "private": false,
   "main": "index.js",
   "repository": {
