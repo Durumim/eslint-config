@@ -81,11 +81,11 @@ module.exports = {
       {
         tabWidth: 2, // Sets tab width to 2 spaces.
         semi: true, // Requires semicolons at the end of statements.
-        arrowParens: 'avoid', // Avoids parentheses for arrow functions with a single argument.
+        arrowParens: 'always', // Avoids parentheses for arrow functions with a single argument.
         bracketSameLine: true, // Keeps closing JSX bracket on the same line.
         bracketSpacing: true, // Adds spacing inside object brackets.
         singleQuote: false, // Uses double quotes.
-        printWidth: 120, // Sets maximum line length to 120 characters.
+        printWidth: 80, // Sets maximum line length to 120 characters.
         trailingComma: 'all', // Adds trailing commas.
         endOfLine: 'auto', // Sets end of line style automatically.
       },
@@ -117,5 +117,6 @@ module.exports = {
         ],
       },
     ],
+    'arrow-parens': ['error', 'as-needed'],
   },
 };
