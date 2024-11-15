@@ -1,9 +1,13 @@
 {
   "name": "@durumim/eslint-config",
   "description": "Shared ESLint configuration for Durumim UI projects",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": false,
   "main": "react.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "repository": {
     "url": "git@github.com:durumim/eslint-config.git"
   },
